@@ -1,0 +1,127 @@
+<!DOCTYPE html5>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CO2 Emission Map</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+       <!--<link rel="stylesheet" href="css/destyle.css"> -->
+        
+        <script src="js/p5.js"></script>
+        <script src="js/p5.sound.js"></script>
+        <script src="js/sketch_map3.js"></script> 
+        
+        <style> /*a la place de css*/
+            body {
+                margin: 20px;
+                padding: 15px;
+                font-family: fantasy;
+            }
+            div{
+                resize: both;
+            }
+            img {
+                padding: 15px;
+                max-width: 60%; 
+                height: auto;   
+            }
+
+            /* unvisited link */
+            a:link {
+                color: #2b0f91d5;
+            }
+            /* visited link */
+            a:visited {
+                color:#2b0f91d5
+            }
+            /* mouse over link */
+            a:hover {
+                color: #577360;
+            }
+            /* selected link */
+            a:active {
+                color:#2b0f91d5;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--<h1 id="title">Changing HTML elements</h1> -->
+        <div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <h1 class="display-3 padding-top">The future of our planet is in our hands</h1>
+                    <hr>
+                    <h5>--- How should we distribute the burdens of climate change? Who are responsible for? ---</h5>
+                    <hr>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-8">
+                    <img src="http://cartoonmovement.typepad.com/.a/6a014e5f5d3c7c970c01bb0992a7d3970d-pi"
+                    alt="Our earth is melting" >
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <h3>"Developed country Parties should continue taking the lead by undertaking economy 
+                wide absolute emission reduction targets. Developing country Parties should continue enhancing their mitigation efforts, 
+                and are encouraged to move over time towards economy-wide emission reduction or limitation targets in the light of different national circumstances. "</h3>
+                 <a href="https://unfccc.int/files/meetings/paris_nov_2015/application/pdf/paris_agreement_english_.pdf" target="_blank">
+                From article 4 of the Paris Agreement</a>
+            </div>
+        </div>
+        <div style="text-align: center;font-family: Helvetica;">
+            <div id="sketch-holder_5"></div>
+            <h6>World's Total CO2 Emission in 2019 /tonnes</h6>
+            <a href="https://ourworldindata.org/grapher/annual-co-emissions-by-region" target="_blank">source:"Our World in Data"</a>
+        <!--<table >
+                <tr>
+                  <th>ranking</th>
+                  <th>country</th>
+                  <th>amount of CO2 emission</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>China</td>
+                  <td>10174681100</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>United States</td>
+                  <td>5284696657</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>India</td>
+                  <td>52616448820</td>
+                </tr> 
+                <tr>
+                    <td>4</td>
+                    <td>EU</td>
+                    <td>2188947384</td>
+                  </tr>             
+            </table> -->  
+        </div>
+        <div>
+            <div style="display: flex; width: 50%; height: 40%;">
+                <img src="http://rief-jp.org/wp-content/uploads/08f90fc6dbbd68ab9b6ab1124fab33232.png">
+                <img src="http://d3vyoh8eiqw5uv.cloudfront.net/wp-content/uploads/2019/02/04183200/AP19026339333679.jpg">
+                <img src="https://cdn.autoc-one.jp/images/article/202003/21205228243_0d15_o.jpg">
+            </div>
+            <div style="display: flex; width: 50%; height: 40%;">
+                <img src="https://i2.wp.com/afri-quest.com/wp-content/uploads/2019/06/main.jpg?ssl=1">
+                <img src="https://img.huffingtonpost.com/asset/58a38d9725000034080b9108.jpeg?ops=scalefit_630_noupscale">
+                <img src="https://en.reset.org/files/imagecache/big_image/inline-images/7204726548_e5f2a48c43_z.jpg">
+            </div>
+        </div> 
+        <div>
+            <p style="text-align: center;"> <!--Do developed countries taking the lead in reducing CO2 emission?
+                Can developed countries continue taking the same approach to the climate issue? 
+                Do countries with higher amount of CO2 emission not holding
+                bigger responsibility and burden to tackle the environmental problem?
+                If not, who are responsible for? Who should make effort in tackling environmental issue?-->
+                Are we, the developed countries, doing our best?
+            </p>
+        </div>
+
+    </body>

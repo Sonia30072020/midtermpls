@@ -1,0 +1,103 @@
+
+#container{
+    display: grid;
+    background: #A7F5B6;
+    grid-template-areas: "header header"
+                         "content sidebar"
+                         "footer footer";
+    
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.ppl1 {
+
+color: #A97EAD
+
+}
+    .item {
+background: #996369;
+    padding: 30px;
+
+    }
+
+    .item1 {
+        background: #EBA1B8;
+        grid-row-start: row-start;
+        grid-row-end: row-end 4;
+        grid-column-start: col-start;
+        grid-column-end: col-end 2;
+}
+
+ header {
+     grid-row: header;
+     grid-column: header;
+ }
+
+ main {
+     grid-row: content;
+     grid-column: content;
+ }
+
+ aside {
+     grid-row: sidebar;
+     grid-column: sidebar;
+ }
+
+.padding {
+     
+     padding-top: 1px; 
+ }
+ 
+ footer {
+     grid-row: footer;
+     grid-column: footer;
+ }
+
+  header, main, aside, footer {
+     border: 1px dashed;
+ }
+
+  
+
+    p {
+ margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 30px;
+    }
+
+    kbd {
+         margin-left: 60px;
+
+    }
+
+    img {
+        
+ padding: 15px;
+ max-width: 60%; 
+ height: auto;
+
+    }
+
+/*<a>で定義したcouleurのchanges*/
+ /* unvisited link */
+a:link {
+  color: #2b0f91d5;
+}
+/* visited link */
+a:visited {
+  color:#2b0f91d5
+}
+/* mouse over link */
+a:hover {
+  color: #577360;
+}
+/* selected link */
+a:active {
+  color:#2b0f91d5;
+}
+
